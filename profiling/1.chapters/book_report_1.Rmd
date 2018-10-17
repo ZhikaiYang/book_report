@@ -1,5 +1,7 @@
 ---
-title: "R Notebook"
+title: "Mrode Ch1"
+author: "Zhikai Yang"
+date: 10-17-2018
 output:
   html_document: default
   html_notebook: default
@@ -7,16 +9,19 @@ output:
   word_document: default
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+## Section 1:
 
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+Basic model
+$$y_{ij} = \mu_i + g_i + e_{ij} \hspace{150pt} (1.1)$$
 
+### q1. Is the definition of $e_{ij}$ correct? (p1)
 
-Basic model$$y_{ij} = \mu_i + g_i + e_{ij} \hspace{150pt} (1.1)$$
-q1. Is the definition of $e_{ij}$ correct? (p1)
+> Yang: must be correct. $j$ here indicate the traits.
+
 
 Ignoring dominance and epistasis, the model becomes$$y_{ij} = \mu_i + g_{ai} + e_{ij}^* \hspace{150pt} (1.2)$$
-q2. It is assumed that var(y), var(g)and var($e^*$) are known, but how are var(g)and var($e^*$) calculated?(p2)
+
+### q2. It is assumed that var(y), var(g)and var($e^*$) are known, but how are var(g)and var($e^*$) calculated?(p2)
 
 q3. From Eqn 1.2, the problem of predicting breeding value reduces to that of adjusting phenotypic observations for identifiable
 non-random environmental effects and appropriately weighting the records of animals and their available relatives. How is this done specifically? (p2)
